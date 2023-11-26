@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Vishal') {
+            steps {
+                bat "echo 'Hello'"
+            }
+        }
+        stage('stage2') {
+            steps {
+                bat "echo 'demo test environment'"
+            }
+        }
+        stage('stage3') {
+            steps {
+                bat "echo 'demo Deployment'"
+            }
+        }
+    }
+}
